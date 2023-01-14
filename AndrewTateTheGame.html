@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="user-scalable=no"/>
+
+<body>
+
+<head>
+<style>
+.tatestart {
+position: fixed;
+}
+</style>
+</head>
+
+
+
+<img style="padding: -30px; margin: -8px;"  onclick="tatestart()" class="tatestart" width=100% length=100% <body src="TateStart.jpeg">
+
+
+
+<img onclick="pull()"src="TateBugatti.jpeg" id="pull" class="tatestart" width="1500" height="100%" style="top:0px; left:-100px; visibility:hidden"/>
+   
+ <script type="text/javascript">
+      function tatestart() {
+        document.getElementById('pull').style.visibility='visible';
+}
+
+</script>
+
+
+    <script type="text/javascript">
+      function pull() {
+        document.getElementById('qu').style.visibility='visible';
+
+document.getElementById('quack').style.visibility='visible';
+
+document.getElementById('quacker').style.visibility='visible';
+      }
+   </script>
+
+ <img src="tatecolour.jpeg" id="qu" class="tatestart" width="100%" height="100%" style="top:0px; left:0px; visibility:hidden"/>
+
+ <img onclick="playAudio()" src="no.jpeg" id="quack" class="tatestart" width="40%" style="top:0px; left:0px; top:1200px; visibility:hidden"/>
+
+ <img onclick="yes()" src="yes.jpeg" id="quacker" class="tatestart" width="45%" style="top:0px; left:545px; top:1200px; visibility:hidden"/>
+
+<img src="tatenotext.jpeg" id="tatenotext" class="tatestart" width="102%" style="margin: -10px; visibility:hidden;"/>
+
+
+<img src="blackback.jpeg" id="blackback" class="tatestart" width="102%" style="margin: -10px; visibility:hidden;"/>
+
+<img src="Emo.jpeg" id="emo" class="tatestart" width="102%" style="margin: -10px; visibility:hidden;"/>
+
+
+
+
+<img src="winner.jpeg" id="winner" class="tatestart" width="102%" style="margin: -10px; visibility:hidden;"/>
+
+<audio id="pp">
+  <source src="Whatcolor.mp3.mp3" type="audio/mpeg">
+
+<audio id="gta">
+  <source src="gtadead.mp3" type="audio/mpeg">
+
+
+<audio id="tatetheme">
+  <source src="tatetheme.mp3" type="audio/mpeg">
+
+<audio id="likecolour">
+  <source src="likecolour.mp3" type="audio/mpeg">
+
+
+<script>
+ 
+
+
+
+function delay(time) {
+return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function playAudio() { 
+
+var x = document.getElementById("pp");
+
+  x.play();
+
+
+window.setTimeout(notext, 0)
+
+}
+
+function notext() { 
+
+document.getElementById('tatenotext').style.visibility='visible';
+
+
+window.setTimeout(cap, 1900)
+
+}
+
+function cap() { 
+
+document.getElementById('blackback').style.visibility='visible';
+
+window.setTimeout(emou, 300)
+
+}
+
+function emou() {
+var x = document.getElementById("gta");
+
+  x.play();
+
+document.getElementById('emo').style.visibility='visible';
+}
+
+function yes() {
+var x = document.getElementById("likecolour");
+
+  x.play();
+
+var x = document.getElementById("tatetheme");
+
+  x.play();
+
+document.getElementById('winner').style.visibility='visible';
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
